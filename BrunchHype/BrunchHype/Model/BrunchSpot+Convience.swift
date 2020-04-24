@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import CoreData
+
+extension BrunchSpot {
+    @discardableResult
+    convenience init(name:String, tier: String = "Unrated", summary: String = "No summary added", context: NSManagedObjectContext = CoreDataStack.context) {
+        self.init(context:context)
+        self.name = name
+        self.tier = tier
+        self.summary = summary 
+    }
+}
+

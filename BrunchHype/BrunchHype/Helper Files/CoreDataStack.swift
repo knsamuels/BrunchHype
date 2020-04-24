@@ -24,5 +24,5 @@ class CoreDataStack {
 }()
 
     static var context: NSManagedObjectContext { return container.viewContext }
-}
+}// to save some typing 
 
